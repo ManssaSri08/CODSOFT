@@ -1,0 +1,202 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MANSSA SRI - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>MANSSA SRI</h1>
+      <p>A Passionate Developer</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <img class="profile-img" src="https://i.postimg.cc/vTDmdJgX/profile.jpg" alt="MANSSA SRI">
+    <h2>About Me</h2>
+    <p>Hi! I'm <strong>MANSSA SRI</strong>, a creative and motivated developer with a passion for glowing user experiences and efficient code.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>C</li>
+      <li>C++</li>
+      <li>Python</li>
+      <li>Java</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Landing Page</h3>
+      <p>A clean and modern responsive landing page created using HTML & CSS.</p>
+    </div>
+    <div class="project">
+      <h3>Portfolio</h3>
+      <p>This glowing personal portfolio website, built to showcase my profile and skills.</p>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <a href="resume.pdf" download class="btn">Download Resume</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:manssa@example.com">manssa@example.com</a></p>
+    <p>Phone: +91-9876543210</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MANSSA SRI. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+
+CSS
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0a0a1a 0%, #050510 100%);
+  font-family: 'Outfit', sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+header {
+  padding: 40px 20px;
+  background: radial-gradient(circle, #1a1a2e, #0f3460);
+  box-shadow: 0 0 20px #00f7ff70;
+  color: #00f7ff;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #9aefff;
+}
+
+section {
+  margin: 50px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 0 15px #00f7ff40;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #00f7ff;
+  box-shadow:
+    0 0 15px #00f7ff,
+    0 0 30px #00f7ff,
+    0 0 45px #00f7ff;
+  animation: pulseGlow 2s infinite ease-in-out;
+  margin-bottom: 20px;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 15px #00f7ff,
+      0 0 30px #00f7ff,
+      0 0 45px #00f7ff;
+  }
+  50% {
+    box-shadow:
+      0 0 25px #00f7ff,
+      0 0 50px #00f7ff,
+      0 0 75px #00f7ff;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+ul li {
+  padding: 12px 25px;
+  font-weight: 600;
+  color: #0ff;
+  border: 2px solid #0ff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #0ff60;
+  transition: 0.3s;
+}
+
+ul li:hover {
+  background-color: #0ff;
+  color: #000;
+  cursor: pointer;
+}
+
+.project h3 {
+  color: #0ff;
+  font-size: 1.4rem;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.btn {
+  padding: 12px 30px;
+  background: #0ff;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+a {
+  color: #0ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 40px;
+  background: #05050f;
+  font-size: 0.9rem;
+  box-shadow: 0 0 10px #0ff40;
+}
